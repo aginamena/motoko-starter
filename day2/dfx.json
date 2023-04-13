@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "Homework_backend": {
+      "main": "src/Homework_backend/main.mo",
+      "type": "motoko"
+    },
+    "Homework_frontend": {
+      "dependencies": [
+        "Homework_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Homework_frontend/src/index.html"
+      },
+      "source": [
+        "src/Homework_frontend/assets",
+        "dist/Homework_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
